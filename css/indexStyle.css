@@ -22,7 +22,7 @@
 }
 
 .myCardContainer dl a, .myCardContainer dl a:active, .myCardContainer dl a:focus{
-	color: black;
+	color: white;
 	font-weight: 600;
 	text-decoration: underline;
 }
