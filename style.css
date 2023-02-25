@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: 250px;
+    height: 60px;
+
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.content{
+    text-align: center ;
+}
+
+.content h1{
+    display: inline;
+    font-size: 160px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.2s;
+    font-family: 'Montserrat', sans-serif;
+    text-align: inherit;
+}
+
+.content b{
+    display: inline;
+    font-size: 160px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.2s;
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    text-align: inherit;
+}
+
+.content strong{
+    display: inline;
+    font-size: 160px;
+    color: #408cff;
+    font-weight: 600;
+    transition: 0.2s;
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    text-align: inherit;
+}
+
+.content h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+
+}
+
+.content strong:hover{
+    -webkit-text-stroke: 2px hsl(216, 73%, 41%);
+    color: transparent;
+}
+
+.content a{
+    display: grid;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding:  14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.hvh{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
