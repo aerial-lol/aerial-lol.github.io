@@ -1,4 +1,4 @@
-![](https://terrorist.bio/aerial)
+![](![](https://komarev.com/ghpvc/?username=aerial-lol))
 
 <p align="center">
   <br>
