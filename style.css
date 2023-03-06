@@ -48,8 +48,30 @@ nav ul li a{
 }
 
 .content{
-    text-align: center ;
+    text-align: center;
 }
+
+.lineUp {
+    animation: 2s anim-lineUp ease-out infinite;
+    animation-iteration-count: 1;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
 
 .content h1{
     display: inline;
@@ -88,24 +110,57 @@ nav ul li a{
 }
 
 .content strong:hover{
-    -webkit-text-stroke: 2px hsl(216, 73%, 41%);
+    -webkit-text-stroke: 2px #1c59b5;
     color: transparent;
 }
 
-.content a{
-    display: grid;
+.animate-charcter
+{
     text-decoration: none;
-    color: #fff;
-    font-size: 24px;
-    border: 2px solid #fff;
-    padding:  14px 70px;
+    color: #1c59b5;
+    border: 2px solid #1c59b5;
+    padding: 14px 70px;
     border-radius: 50px;
     margin-top: 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #4f4ea5 0%,
+    #6216b4 29%,
+    #35a4ac 67%,
+    #1c59b5 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 24px;
+}
 
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.tenor-gif-embed{
+    pointer-events: none;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 .hvh{
+    pointer-events: none;
     position: absolute;
     right: 0;
     bottom: 0;
