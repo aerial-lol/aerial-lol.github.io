@@ -27,6 +27,7 @@ nav{
 }
 
 nav .logo{
+    pointer-events: none;
     width: 250px;
     height: 60px;
 
